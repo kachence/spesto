@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.local
+*.egg-info/
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+
+# OS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Local scratch
+/data/
+/tmp/
+*.log
+
+# Sample CSVs left at repo root from initial feed analysis
+/*.csv
