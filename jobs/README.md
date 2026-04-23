@@ -12,10 +12,15 @@ and `main.py`. No shared library yet — when two jobs need the same code, facto
   writes raw archive + extracted CSVs to GCS landed zone.
 - **`load_to_bigquery/`** — transforms extracted CSVs to NDJSON and loads into
   `landed_raw.kolkostruva_daily` partitioned by `ingestion_date`.
+- **`transform/`** — rebuilds dim tables (`staged.retailer_dim`, `category_dim`,
+  `ekatte_dim`) from GCS and builds `staged.price_observations` for a given date
+  (typed, normalized, dim-joined).
 
 ## Planned jobs
 
-- **`transform/`** — landed → staged → prod SQL transformations.
-- **`match_products/`** — Claude-driven cross-retailer product matching loop.
+- **`resolve_stores/`** — geocode unique `store_id`s via Google Places into
+  `staged.store_dim` (lat/lng + Place ID + formatted address).
+- **`match_products/`** — Claude-driven cross-retailer product matching loop,
+  populating `staged.retailer_sku_matches`.
 - **`sync_to_postgres/`** — nightly sync of `prod.canonical_products` +
   `prod.current_prices` → operational Postgres.

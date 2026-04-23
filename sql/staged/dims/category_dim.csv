@@ -1,0 +1,106 @@
+category_code,category_name_bg,category_name_en,is_grocery,notes
+1,Бял хляб,White bread,true,Official: Бял хляб от 500 г до 1 кг
+2,Хляб Добруджа,Dobrudja bread,true,Official: Хляб Добруджа от 500 г до 1 кг
+3,Ръжен хляб,Rye bread,true,Official: Ръжен хляб от 400 г до 600 г. Retailers also file whole-grain here.
+4,Типов хляб,Type bread,true,Official: Типов хляб от 400 г до 600 г
+5,Точени кори,Phyllo pastry sheets,true,Official: Точени кори от 400 г до 500 г
+6,Прясно мляко,Fresh milk,true,"Official: Прясно мляко от 2% до 3,6% 1 л"
+7,Кисело мляко,Yogurt,true,"Official: Кисело мляко от 2% до 3,6%, в кофички от 370 г до 500 г"
+8,"Сирене от краве мляко, насипно","Cow cheese, bulk",true,"Official: Сирене от краве мляко, насипно 1 кг"
+9,"Сирене от краве мляко, пакетирано","Cow cheese, packaged",true,"Official: Сирене от краве мляко, пакетирано от 200 г до 1 кг"
+10,"Кашкавал от краве мляко, насипно","Kashkaval, bulk",true,"Official: Кашкавал от краве мляко, насипно 1 кг"
+11,"Кашкавал от краве мляко, пакетирано","Kashkaval, packaged",true,"Official: Кашкавал от краве мляко, пакетирано от 200 г до 1 кг"
+12,Краве масло,Butter,true,Official: Краве масло от 125 г до 250 г
+13,"Извара, насипна","Curd cheese, bulk",true,"Official: Извара, насипна 1 кг"
+14,"Извара, пакетирана","Curd cheese, packaged",true,"Official: Извара, пакетирана от 200 г до 1 кг"
+15,Прясно охладено пиле,Fresh whole chicken,true,Official: Прясно охладено пиле 1 кг (цяло)
+16,Пилешко филе,Chicken fillet,true,"Official: Пилешко филе, охладено 1 кг"
+17,Пилешки бут,Chicken leg,true,"Official: Пилешки бут, цял охладен 1 кг"
+18,Свинска плешка,Pork shoulder,true,Official: Прясно свинско месо - плешка 1 кг
+19,Свински бут,Pork ham,true,Official: Прясно свинско месо - бут 1 кг
+20,Свински шол,Pork top round,true,Official: Прясно свинско месо - шол 1 кг. Retailers also file pork loin here.
+21,Свински врат,Pork neck,true,Official: Прясно свинско месо - врат 1 кг
+22,Свинско месо за готвене,Pork for cooking,true,Official: Свинско месо за готвене 1 кг
+23,Телешки шол,Veal top round,true,Official: Телешко месо - шол 1 кг
+24,Телешко за готвене,Veal for cooking,true,Official: Телешко месо за готвене 1 кг
+25,Кайма смес 60/40,Minced meat 60/40,true,"Official: Мляно месо - смес 60/40, насипно 1 кг"
+26,"Кренвирши, насипни","Frankfurters, bulk",true,"Official: Кренвирши, насипни 1 кг"
+27,Пресни колбаси,Fresh packaged sausages,true,Official: Пресни колбаси от 300 г до 1 кг. Includes packaged frankfurters (кренвирш вакуум).
+28,Сухи колбаси,Dry sausages,true,"Official: Сухи колбаси (Шпек, Бургас, Деликатесен) от 250 г до 1 кг"
+29,Замразена риба,Frozen fish,true,"Official: Риба замразена (скумрия, пъстърва, лаврак, ципура) 1 кг"
+30,Охладена риба,Chilled fish,true,"Official: Риба охладена (скумрия, пъстърва, лаврак, ципура) 1 кг"
+31,Яйца размер M,Eggs size M,true,Official: Яйца размер М (подово отглеждане) от 6 бр. до 10 бр.
+32,Яйца размер L,Eggs size L,true,Official: Яйца размер L (подово отглеждане) от 6 бр. до 10 бр.
+33,"Боб, пакетиран",Beans packaged,true,"Official: Боб, пакетиран 1 кг"
+34,"Леща, пакетирана",Lentils packaged,true,"Official: Леща, пакетирана 1 кг"
+35,Бисерен ориз,Short-grain rice,true,Official: Бисерен ориз 1 кг
+36,Макарони,Pasta,true,Official: Макарони от 400 г до 500 г
+37,Спагети,Spaghetti,true,"Official: Спагети (№3, №5 и №10) 500 г"
+38,Бяла захар,White sugar,true,Official: Бяла захар 1 кг
+39,Готварска сол,Table salt,true,Official: Готварска сол 1 кг
+40,Брашно тип 500,Flour type 500,true,Official: Брашно тип 500 1 кг
+41,Брашно екстра,Flour extra,true,Official: Брашно екстра 1 кг
+42,Слънчогледово олио,Sunflower oil,true,Official: Слънчогледово олио 1 л
+43,Зехтин,Olive oil,true,Official: Зехтин 1 л
+44,Винен оцет,Wine vinegar,true,Official: Винен оцет 700 мл
+45,Ябълков оцет,Apple vinegar,true,Official: Ябълков оцет 700 мл
+46,Консерви боб,Canned beans,true,Official: Консерви боб от 400 г до 800 г
+47,Консерви грах,Canned peas,true,Official: Консерви грах от 400 г до 800 г
+48,Консервирани домати,Canned tomatoes,true,Official: Консервирани домати от 400 г до 800 г
+49,Лютеница,Lyutenitsa,true,Official: Лютеница от 400 г до 800 г
+50,Лимони,Lemons,true,"Official: Лимони, насипни 1 кг"
+51,Портокали,Oranges,true,"Official: Портокали, насипни 1 кг"
+52,Банани,Bananas,true,Official: Банани 1 кг
+53,Ябълки,Apples,true,"Official: Ябълки, насипни 1 кг"
+54,Червени домати,Fresh tomatoes,true,"Official: Червени домати, насипни 1 кг"
+55,Кромид лук,Onions,true,"Official: Кромид лук, насипен 1 кг"
+56,Моркови,Carrots,true,"Official: Моркови, насипни 1 кг"
+57,Бяло зеле,White cabbage,true,Official: Бяло зеле 1 кг
+58,Краставици,Cucumbers,true,"Official: Краставици, насипни 1 кг"
+59,Зрял чесън,Mature garlic,true,Official: Зрял чесън 1 кг
+60,Пресни гъби,Fresh mushrooms,true,"Official: Пресни гъби, насипни 1 кг"
+61,Картофи,Potatoes,true,"Official: Картофи, насипни 1 кг"
+62,Маслини,Olives,true,"Official: Маслини, насипни 1 кг"
+63,Бебешка каша,Baby porridge,true,"Official: Каша (млечна, плодова) от 190 г до 250 г"
+64,Детско пюре,Baby purée,true,Official: Детско пюре от 190 г до 250 г
+65,Адаптирани млека,Infant formula,true,Official: Адаптирани млека от 400 г до 800 г
+66,Обикновени бисквити,Plain biscuits,true,Official: Обикновени бисквити
+67,Кроасани,Croissants,true,Official: Кроасани от 50 г до 110 г
+68,Баница,Banitsa,true,Official: Баница от 100 г до 500 г
+69,Млечен шоколад,Milk chocolate,true,Official: Млечен шоколад от 80 г до 100 г
+70,Мляно кафе,Ground coffee,true,Official: Мляно кафе от 200 г до 250 г
+71,Кафе на зърна,Whole bean coffee,true,Official: Кафе на зърна 1 кг
+72,Чай на пакетчета,Herbal tea bags,true,Official: Чай (билков на пакетчета)
+73,Минерална вода,Mineral water,true,"Official: Минерална вода, 6 бр. в опаковка по 1,5 л"
+74,Светла бира,Light beer,true,Official: Светла бира 2 л
+75,Бяло вино,White wine,true,"Official: Бяло вино бутилирано, произход България 750 мл"
+76,Червено вино,Red wine,true,"Official: Червено вино бутилирано, произход България 750 мл"
+77,Ракия,Rakia,true,"Official: Ракия, произход България 700 мл"
+78,Тютюневи изделия,Tobacco products,false,"Official: Тютюневи изделия, произход България, кутия, пакет. Excluded from grocery scope."
+79,Препарат за миене на съдове,Dishwashing liquid,false,Official: Течен препарат за миене на съдове от 400 мл. Household — out of v1 grocery scope.
+80,Четка за зъби,Toothbrush,false,Official: Четка за зъби – средна твърдост. Personal care — out of v1 grocery scope.
+81,Паста за зъби,Toothpaste,false,"Official: Паста за зъби, туба от 50 мл до 125 мл. Personal care — out of v1 grocery scope."
+82,Шампоан,Shampoo,false,Official: Шампоан за нормална коса от 250 мл до 500 мл. Personal care — out of v1 grocery scope.
+83,Сапун твърд,Bar soap,false,"Official: Сапун, твърд. Personal care — out of v1 grocery scope."
+84,Мокри кърпи,Wet wipes,false,Official: Класически мокри кърпи пакет. Household — out of v1 grocery scope.
+85,Тоалетна хартия,Toilet paper,false,Official: Тоалетна хартия 8 ролки. Household — out of v1 grocery scope.
+86,(A02) Антиациди,(A02) Antacids,false,"Official: (A02) Лекарства за лечение на разстройства, свързани с киселинността"
+87,(A03) Гастроинтестинални,(A03) Functional GI agents,false,Official: (А03) Лекарства за лечение на функционални гастроинтестинални разстройства
+88,(A06) Лаксативи,(A06) Laxatives,false,Official: (A06) Очистителни средства (лаксативи)
+89,(A07) Антидиарични,(A07) Antidiarrheals,false,"Official: (A07) Антидиарични, чревни противовъзпалителни/антиинфекциозни средства"
+90,(D01) Противогъбични,(D01) Antifungals,false,Official: (D01) Противогъбични средства за дерматологична употреба
+91,(D04) Противосърбежни,(D04) Antipruritic topicals,false,"Official: (D04) Противосърбежни препарати, включително антихистамини, анестетици и други"
+92,(D08) Антисептици,(D08) Antiseptics,false,Official: (D08) Антисептици и дезинфектанти
+93,(J07) Ваксини,(J07) Vaccines,false,Official: (J07) Ваксини
+94,(M01) НСПВС,(M01) NSAIDs,false,Official: (M01) Противовъзпалителни и противоревматични продукти нспвс
+95,(M02) Локална болка,(M02) Topical pain relief,false,Official: (M02) Локални продукти за ставна и мускулна болка
+96,(N02) Аналгетици,(N02) Analgesics,false,Official: (N02) Аналгетици
+97,(R01) Назални,(R01) Nasal preparations,false,Official: (R01) Назални препарати
+98,(R02) Гърло,(R02) Throat preparations,false,Official: (R02) Препарати за лечение на гърло
+99,(R05) Кашлица и простуда,(R05) Cough and cold,false,Official: (R05) Препарати за лечение на кашлица и простудни заболявания
+100,(R06) Антихистамини,(R06) Systemic antihistamines,false,Official: (R06) Антихистамини за системно приложение
+101,(S02) Отологични,(S02) Otologicals,false,Official: (S02) Отологични средства
+-1,Невалидна категория,Invalid category,false,"Retailer-coding quirk: 178 rows of Monster energy with #K# suffix, 2 retailers"
+1972047017,Повреден ред,Corrupted row,false,"Garbage: 5 rows / 1 retailer, looks like a product_code leaked into category_code"
+Категория,Заглавен ред в данните,Header leaked as data,false,"Garbage: 1 row, CSV header appeared as a data row"
+,Липсваща категория,Missing category,false,Empty category_code; 125 rows in one retailer feed
