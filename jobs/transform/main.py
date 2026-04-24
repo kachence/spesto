@@ -36,6 +36,14 @@ RETAILER_DIM_SCHEMA = [
     SchemaField("retailer_eik", "STRING", mode="REQUIRED"),
     SchemaField("retailer_brand", "STRING", mode="REQUIRED"),
     SchemaField("retailer_type", "STRING", mode="REQUIRED"),
+    SchemaField(
+        "is_primary",
+        "BOOL",
+        mode="REQUIRED",
+        description="True for the top consumer supermarket chains in v1 scope. "
+        "Matching/consumer UI filters on this; other retailers are ingested and "
+        "typed but not shown to consumers.",
+    ),
     SchemaField("notes", "STRING"),
 ]
 
@@ -78,6 +86,13 @@ PRICE_OBS_SCHEMA = [
     SchemaField("retailer_eik", "STRING", mode="REQUIRED"),
     SchemaField("retailer_brand", "STRING"),
     SchemaField("retailer_type", "STRING"),
+    SchemaField(
+        "is_primary",
+        "BOOL",
+        description="True when this retailer is in the top-7 consumer chains "
+        "(Billa/Kaufland/Lidl/Fantastiko/T Market/Minimart/Metro). Downstream "
+        "matching and consumer UI filter on this.",
+    ),
     SchemaField(
         "retailer_sku_id",
         "STRING",
@@ -257,6 +272,12 @@ def run_price_obs_build(
     job_config = bigquery.QueryJobConfig(
         destination=dest,
         write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE,
+        # ALLOW_FIELD_ADDITION lets partition-scoped writes introduce new
+        # nullable columns (e.g. when we add a dim field). Without it, adding
+        # is_primary / future schema tweaks would need ALTER TABLE first.
+        schema_update_options=[
+            bigquery.SchemaUpdateOption.ALLOW_FIELD_ADDITION,
+        ],
         query_parameters=[
             bigquery.ScalarQueryParameter("ingestion_date", "DATE", date.isoformat())
         ],

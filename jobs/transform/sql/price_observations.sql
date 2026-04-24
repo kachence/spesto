@@ -72,6 +72,7 @@ enriched AS (
     n.retailer_eik,
     r.retailer_brand,
     r.retailer_type,
+    r.is_primary,
 
     -- Stable IDs. Use TO_HEX(SHA256(...)) with field separator \x1f (unit separator)
     -- so concatenation can't collide via overlapping content.
@@ -133,6 +134,7 @@ SELECT
   retailer_eik,
   retailer_brand,
   retailer_type,
+  is_primary,
   retailer_sku_id,
   store_id,
   store_name,

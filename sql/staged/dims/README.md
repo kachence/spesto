@@ -20,7 +20,26 @@ display key the consumer UI uses, `retailer_eik` is what joins to landed data.
 | `retailer_eik`   | STRING REQUIRED — legal entity EIK, matches `landed_raw.kolkostruva_daily.retailer_eik`                              |
 | `retailer_brand` | STRING REQUIRED — consumer-facing brand name                                                                         |
 | `retailer_type`  | STRING REQUIRED — enum: `grocery` · `pharmacy` · `drogerie` · `specialty` · `duty_free` · `online` · `alcohol_tobacco` · `other` |
+| `is_primary`     | BOOL REQUIRED — `true` for top-tier consumer chains in the v1 product scope (see below)                              |
 | `notes`          | STRING — free-text for uncertain classifications or grouping decisions                                               |
+
+**`is_primary` — v1 scope filter.** Flags the top consumer-facing supermarket
+chains that show up in the spesto.bg UI and drive product matching. All other
+retailers are ingested and typed in the data warehouse (so they're available for
+future B2B / analytics work) but don't reach the consumer experience. Current
+primary list (7 brands, 8 EIKs — Fantastiko has two):
+
+- Билла (130007884)
+- Кауфланд (131129282)
+- Лидл (131071587)
+- Фантастико (206255903 main, 831556063 secondary)
+- T Market (131324923)
+- Минимарт (207064349)
+- Метро (121644736)
+
+To change v1 scope: flip the `is_primary` cell and re-run `jobs/transform/` with
+`--upload-dims`. No data reprocessing needed because `staged.price_observations`
+refreshes the full partition on every run.
 
 **Type semantics:**
 
